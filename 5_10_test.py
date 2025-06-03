@@ -98,7 +98,7 @@ class TestLocation:
         new_file = open('existing_place_id.txt', 'w')  # открываем файл в режиме записи
         for place in existing_places[:3]:  # берем только первые 3 существующие локации
             new_file.write(place + '\n')
-            print(f'Существующий place_id записан в файл: {place}')
+            print(f'Существующий place_id записан в файл: {place}') # выводим на печать успех
 
 # Запуск тестов
 test = TestLocation()
