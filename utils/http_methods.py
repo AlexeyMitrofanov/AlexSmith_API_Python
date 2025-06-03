@@ -13,15 +13,15 @@ class HttpMethods:
 
     @staticmethod
     def post(url, body):
-        result = requests.get(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
+        result = requests.post(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
         return result
 
     @staticmethod
     def put(url, body):
-        result = requests.get(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
+        result = requests.put(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
         return result
 
     @staticmethod
     def delete(url, body):
-        result = requests.get(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
+        result = requests.delete(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie, json=body)
         return result
